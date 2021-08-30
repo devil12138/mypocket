@@ -1,30 +1,501 @@
-<html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0;">
-<link rel="icon" href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/favicon.ico">
-<title>请假详情</title>
-<link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/chunk-707d1e16.897ede19.css" rel="prefetch">
-<link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/page-home.9e84349f.css" rel="prefetch">
-<link href="/wec-counselor-leave-apps/leave/js/chunk-707d1e16.db4f3914.js" rel="prefetch">
-<link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/js/page-home.a5488a69.js" rel="prefetch">
-<link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/chunk-common.c6186cbf.css" rel="preload" as="style">
-<link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/chunk-vendors.6d4e2b3d.css" rel="preload" as="style">
-<link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/home.16ec698e.css" rel="preload" as="style">
-<link href="/wec-counselor-leave-apps/leave/js/chunk-common.bced1963.js" rel="preload" as="script">
-<link href="/wec-counselor-leave-apps/leave/js/chunk-vendors.927f40f3.js" rel="preload" as="script">
-<link href="/wec-counselor-leave-apps/leave/js/home.c820cf05.js" rel="preload" as="script">
-<link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/chunk-vendors.6d4e2b3d.css" rel="stylesheet">
-<link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/chunk-common.c6186cbf.css" rel="stylesheet">
-<link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/home.16ec698e.css" rel="stylesheet">
-<link rel="stylesheet" href="https://at.alicdn.com/t/font_1921143_32tobeycj82.css"><style type="text/css">
-#__vconsole {
+<html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0;"><link rel="icon" href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/favicon.ico"><title>请假详情</title><link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/chunk-707d1e16.897ede19.css" rel="prefetch"><link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/page-home.9e84349f.css" rel="prefetch"><link href="/wec-counselor-leave-apps/leave/js/chunk-707d1e16.679682ec.js" rel="prefetch"><link href="/wec-counselor-leave-apps/leave/js/page-home.d6d97d83.js" rel="prefetch"><link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/chunk-common.61b859d8.css" rel="preload" as="style"><link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/chunk-vendors.d58ece81.css" rel="preload" as="style"><link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/home.16ec698e.css" rel="preload" as="style"><link href="/wec-counselor-leave-apps/leave/js/chunk-common.0b7738dc.js" rel="preload" as="script"><link href="/wec-counselor-leave-apps/leave/js/chunk-vendors.85cff36b.js" rel="preload" as="script"><link href="/wec-counselor-leave-apps/leave/js/home.972d984b.js" rel="preload" as="script"><link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/chunk-vendors.d58ece81.css" rel="stylesheet"><link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/chunk-common.61b859d8.css" rel="stylesheet"><link href="https://nwsuaf.campusphere.net/wec-counselor-leave-apps/leave/css/home.16ec698e.css" rel="stylesheet"><link rel="stylesheet" href="https://at.alicdn.com/t/font_1921143_32tobeycj82.css"><script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script><style type="text/css">#__vconsole {
 color: #000;
 font-size: 13px;
 font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 /* global */
 /* compoment */
+}
+#__vconsole .vc-max-height {
+max-height: 19.23076923em;
+}
+#__vconsole .vc-max-height-line {
+max-height: 3.38461538em;
+}
+#__vconsole .vc-min-height {
+min-height: 3.07692308em;
+}
+#__vconsole dd,
+#__vconsole dl,
+#__vconsole pre {
+margin: 0;
+}
+#__vconsole .vc-switch {
+display: block;
+position: fixed;
+right: 0.76923077em;
+bottom: 0.76923077em;
+color: #FFF;
+background-color: #04BE02;
+line-height: 1;
+font-size: 1.07692308em;
+padding: 0.61538462em 1.23076923em;
+z-index: 10000;
+border-radius: 0.30769231em;
+box-shadow: 0 0 0.61538462em rgba(0, 0, 0, 0.4);
+}
+#__vconsole .vc-mask {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0, 0, 0, 0);
+z-index: 10001;
+transition: background 0.3s;
+-webkit-tap-highlight-color: transparent;
+overflow-y: scroll;
+}
+#__vconsole .vc-panel {
+display: none;
+position: fixed;
+min-height: 85%;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 10002;
+background-color: #EFEFF4;
+-webkit-transition: -webkit-transform 0.3s;
+transition: -webkit-transform 0.3s;
+transition: transform 0.3s;
+transition: transform 0.3s, -webkit-transform 0.3s;
+-webkit-transform: translate(0, 100%);
+transform: translate(0, 100%);
+}
+#__vconsole .vc-tabbar {
+border-bottom: 1px solid #D9D9D9;
+overflow-x: auto;
+height: 3em;
+width: auto;
+white-space: nowrap;
+}
+#__vconsole .vc-tabbar .vc-tab {
+display: inline-block;
+line-height: 3em;
+padding: 0 1.15384615em;
+border-right: 1px solid #D9D9D9;
+text-decoration: none;
+color: #000;
+-webkit-tap-highlight-color: transparent;
+-webkit-touch-callout: none;
+}
+#__vconsole .vc-tabbar .vc-tab:active {
+background-color: rgba(0, 0, 0, 0.15);
+}
+#__vconsole .vc-tabbar .vc-tab.vc-actived {
+background-color: #FFF;
+}
+#__vconsole .vc-content {
+background-color: #FFF;
+overflow-x: hidden;
+overflow-y: auto;
+position: absolute;
+top: 3.07692308em;
+left: 0;
+right: 0;
+bottom: 3.07692308em;
+-webkit-overflow-scrolling: touch;
+margin-bottom: constant(safe-area-inset-bottom);
+margin-bottom: env(safe-area-inset-bottom);
+}
+#__vconsole .vc-content.vc-has-topbar {
+top: 5.46153846em;
+}
+#__vconsole .vc-topbar {
+background-color: #FBF9FE;
+display: flex;
+display: -webkit-box;
+flex-direction: row;
+flex-wrap: wrap;
+-webkit-box-direction: row;
+-webkit-flex-wrap: wrap;
+width: 100%;
+}
+#__vconsole .vc-topbar .vc-toptab {
+display: none;
+flex: 1;
+-webkit-box-flex: 1;
+line-height: 2.30769231em;
+padding: 0 1.15384615em;
+border-bottom: 1px solid #D9D9D9;
+text-decoration: none;
+text-align: center;
+color: #000;
+-webkit-tap-highlight-color: transparent;
+-webkit-touch-callout: none;
+}
+#__vconsole .vc-topbar .vc-toptab.vc-toggle {
+display: block;
+}
+#__vconsole .vc-topbar .vc-toptab:active {
+background-color: rgba(0, 0, 0, 0.15);
+}
+#__vconsole .vc-topbar .vc-toptab.vc-actived {
+border-bottom: 1px solid #3e82f7;
+}
+#__vconsole .vc-logbox {
+display: none;
+position: relative;
+min-height: 100%;
+}
+#__vconsole .vc-logbox i {
+font-style: normal;
+}
+#__vconsole .vc-logbox .vc-log {
+padding-bottom: 3em;
+-webkit-tap-highlight-color: transparent;
+}
+#__vconsole .vc-logbox .vc-log:empty:before {
+content: "Empty";
+color: #999;
+position: absolute;
+top: 45%;
+left: 0;
+right: 0;
+bottom: 0;
+font-size: 1.15384615em;
+text-align: center;
+}
+#__vconsole .vc-logbox .vc-item {
+margin: 0;
+padding: 0.46153846em 0.61538462em;
+overflow: hidden;
+line-height: 1.3;
+border-bottom: 1px solid #EEE;
+word-break: break-word;
+}
+#__vconsole .vc-logbox .vc-item-info {
+color: #6A5ACD;
+}
+#__vconsole .vc-logbox .vc-item-debug {
+color: #DAA520;
+}
+#__vconsole .vc-logbox .vc-item-warn {
+color: #FFA500;
+border-color: #FFB930;
+background-color: #FFFACD;
+}
+#__vconsole .vc-logbox .vc-item-error {
+color: #DC143C;
+border-color: #F4A0AB;
+background-color: #FFE4E1;
+}
+#__vconsole .vc-logbox .vc-log.vc-log-partly .vc-item {
+display: none;
+}
+#__vconsole .vc-logbox .vc-log.vc-log-partly-log .vc-item-log,
+#__vconsole .vc-logbox .vc-log.vc-log-partly-info .vc-item-info,
+#__vconsole .vc-logbox .vc-log.vc-log-partly-warn .vc-item-warn,
+#__vconsole .vc-logbox .vc-log.vc-log-partly-error .vc-item-error {
+display: block;
+}
+#__vconsole .vc-logbox .vc-item .vc-item-content {
+margin-right: 4.61538462em;
+display: inline-block;
+}
+#__vconsole .vc-logbox .vc-item .vc-item-repeat {
+display: inline-block;
+margin-right: 0.30769231em;
+padding: 0 6.5px;
+color: #D7E0EF;
+background-color: #42597F;
+border-radius: 8.66666667px;
+}
+#__vconsole .vc-logbox .vc-item.vc-item-error .vc-item-repeat {
+color: #901818;
+background-color: #DC2727;
+}
+#__vconsole .vc-logbox .vc-item.vc-item-warn .vc-item-repeat {
+color: #987D20;
+background-color: #F4BD02;
+}
+#__vconsole .vc-logbox .vc-item .vc-item-code {
+display: block;
+white-space: pre-wrap;
+overflow: auto;
+position: relative;
+}
+#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-input,
+#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-output {
+padding-left: 0.92307692em;
+}
+#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-input:before,
+#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-output:before {
+content: "›";
+position: absolute;
+top: -0.23076923em;
+left: 0;
+font-size: 1.23076923em;
+color: #6A5ACD;
+}
+#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-output:before {
+content: "‹";
+}
+#__vconsole .vc-logbox .vc-item .vc-fold {
+display: block;
+overflow: auto;
+-webkit-overflow-scrolling: touch;
+}
+#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer {
+display: block;
+font-style: italic;
+padding-left: 0.76923077em;
+position: relative;
+}
+#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer:active {
+background-color: #E6E6E6;
+}
+#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer:before {
+content: "";
+position: absolute;
+top: 0.30769231em;
+left: 0.15384615em;
+width: 0;
+height: 0;
+border: transparent solid 0.30769231em;
+border-left-color: #000;
+}
+#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer.vc-toggle:before {
+top: 0.46153846em;
+left: 0;
+border-top-color: #000;
+border-left-color: transparent;
+}
+#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-inner {
+display: none;
+margin-left: 0.76923077em;
+}
+#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-inner.vc-toggle {
+display: block;
+}
+#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-inner .vc-code-key {
+margin-left: 0.76923077em;
+}
+#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer .vc-code-key {
+margin-left: 0;
+}
+#__vconsole .vc-logbox .vc-code-key {
+color: #905;
+}
+#__vconsole .vc-logbox .vc-code-private-key {
+color: #D391B5;
+}
+#__vconsole .vc-logbox .vc-code-function {
+color: #905;
+font-style: italic;
+}
+#__vconsole .vc-logbox .vc-code-number,
+#__vconsole .vc-logbox .vc-code-boolean {
+color: #0086B3;
+}
+#__vconsole .vc-logbox .vc-code-string {
+color: #183691;
+}
+#__vconsole .vc-logbox .vc-code-null,
+#__vconsole .vc-logbox .vc-code-undefined {
+color: #666;
+}
+#__vconsole .vc-logbox .vc-cmd {
+position: absolute;
+height: 3.07692308em;
+left: 0;
+right: 0;
+bottom: 0;
+border-top: 1px solid #D9D9D9;
+display: block!important;
+}
+#__vconsole .vc-logbox .vc-cmd .vc-cmd-input-wrap {
+display: block;
+height: 2.15384615em;
+margin-right: 3.07692308em;
+padding: 0.46153846em 0.61538462em;
+}
+#__vconsole .vc-logbox .vc-cmd .vc-cmd-input {
+width: 100%;
+border: none;
+resize: none;
+outline: none;
+padding: 0;
+font-size: 0.92307692em;
+}
+#__vconsole .vc-logbox .vc-cmd .vc-cmd-input::-webkit-input-placeholder {
+line-height: 2.15384615em;
+}
+#__vconsole .vc-logbox .vc-cmd .vc-cmd-btn {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+width: 3.07692308em;
+border: none;
+background-color: #EFEFF4;
+outline: none;
+-webkit-touch-callout: none;
+font-size: 1em;
+}
+#__vconsole .vc-logbox .vc-cmd .vc-cmd-btn:active {
+background-color: rgba(0, 0, 0, 0.15);
+}
+#__vconsole .vc-logbox .vc-cmd .vc-cmd-prompted {
+position: fixed;
+width: 100%;
+background-color: #FBF9FE;
+border: 1px solid #D9D9D9;
+overflow-x: scroll;
+display: none;
+}
+#__vconsole .vc-logbox .vc-cmd .vc-cmd-prompted li {
+list-style: none;
+line-height: 30px;
+padding: 0 0.46153846em;
+border-bottom: 1px solid #D9D9D9;
+}
+#__vconsole .vc-logbox .vc-group .vc-group-preview {
+-webkit-touch-callout: none;
+}
+#__vconsole .vc-logbox .vc-group .vc-group-preview:active {
+background-color: #E6E6E6;
+}
+#__vconsole .vc-logbox .vc-group .vc-group-detail {
+display: none;
+padding: 0 0 0.76923077em 1.53846154em;
+border-bottom: 1px solid #EEE;
+}
+#__vconsole .vc-logbox .vc-group.vc-actived .vc-group-detail {
+display: block;
+background-color: #FBF9FE;
+}
+#__vconsole .vc-logbox .vc-group.vc-actived .vc-table-row {
+background-color: #FFF;
+}
+#__vconsole .vc-logbox .vc-group.vc-actived .vc-group-preview {
+background-color: #FBF9FE;
+}
+#__vconsole .vc-logbox .vc-table .vc-table-row {
+display: flex;
+display: -webkit-flex;
+flex-direction: row;
+flex-wrap: wrap;
+-webkit-box-direction: row;
+-webkit-flex-wrap: wrap;
+overflow: hidden;
+border-bottom: 1px solid #EEE;
+}
+#__vconsole .vc-logbox .vc-table .vc-table-row.vc-left-border {
+border-left: 1px solid #EEE;
+}
+#__vconsole .vc-logbox .vc-table .vc-table-col {
+flex: 1;
+-webkit-box-flex: 1;
+padding: 0.23076923em 0.30769231em;
+border-left: 1px solid #EEE;
+overflow: auto;
+white-space: pre-wrap;
+word-break: break-word;
+/*white-space: nowrap;
+text-overflow: ellipsis;*/
+-webkit-overflow-scrolling: touch;
+}
+#__vconsole .vc-logbox .vc-table .vc-table-col:first-child {
+border: none;
+}
+#__vconsole .vc-logbox .vc-table .vc-small .vc-table-col {
+padding: 0 0.30769231em;
+font-size: 0.92307692em;
+}
+#__vconsole .vc-logbox .vc-table .vc-table-col-2 {
+flex: 2;
+-webkit-box-flex: 2;
+}
+#__vconsole .vc-logbox .vc-table .vc-table-col-3 {
+flex: 3;
+-webkit-box-flex: 3;
+}
+#__vconsole .vc-logbox .vc-table .vc-table-col-4 {
+flex: 4;
+-webkit-box-flex: 4;
+}
+#__vconsole .vc-logbox .vc-table .vc-table-col-5 {
+flex: 5;
+-webkit-box-flex: 5;
+}
+#__vconsole .vc-logbox .vc-table .vc-table-col-6 {
+flex: 6;
+-webkit-box-flex: 6;
+}
+#__vconsole .vc-logbox .vc-table .vc-table-row-error {
+border-color: #F4A0AB;
+background-color: #FFE4E1;
+}
+#__vconsole .vc-logbox .vc-table .vc-table-row-error .vc-table-col {
+color: #DC143C;
+border-color: #F4A0AB;
+}
+#__vconsole .vc-logbox .vc-table .vc-table-col-title {
+font-weight: bold;
+}
+#__vconsole .vc-logbox.vc-actived {
+display: block;
+}
+#__vconsole .vc-toolbar {
+border-top: 1px solid #D9D9D9;
+line-height: 3em;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex;
+display: -webkit-box;
+flex-direction: row;
+-webkit-box-direction: row;
+}
+#__vconsole .vc-toolbar .vc-tool {
+display: none;
+text-decoration: none;
+color: #000;
+width: 50%;
+flex: 1;
+-webkit-box-flex: 1;
+text-align: center;
+position: relative;
+-webkit-touch-callout: none;
+}
+#__vconsole .vc-toolbar .vc-tool.vc-toggle,
+#__vconsole .vc-toolbar .vc-tool.vc-global-tool {
+display: block;
+}
+#__vconsole .vc-toolbar .vc-tool:active {
+background-color: rgba(0, 0, 0, 0.15);
+}
+#__vconsole .vc-toolbar .vc-tool:after {
+content: " ";
+position: absolute;
+top: 0.53846154em;
+bottom: 0.53846154em;
+right: 0;
+border-left: 1px solid #D9D9D9;
+}
+#__vconsole .vc-toolbar .vc-tool-last:after {
+border: none;
+}
+@supports (bottom: constant(safe-area-inset-bottom)) or (bottom: env(safe-area-inset-bottom)) {
+#__vconsole .vc-toolbar,
+#__vconsole .vc-switch {
+bottom: constant(safe-area-inset-bottom);
+bottom: env(safe-area-inset-bottom);
+}
+}
+#__vconsole.vc-toggle .vc-switch {
+display: none;
+}
+#__vconsole.vc-toggle .vc-mask {
+background: rgba(0, 0, 0, 0.6);
+display: block;
+}
+#__vconsole.vc-toggle .vc-panel {
+-webkit-transform: translate(0, 0);
+transform: translate(0, 0);
+}
 </style><style type="text/css">/* color */
 .vcelm-node {
 color: #183691;
@@ -65,7 +536,8 @@ display: none;
 .vcelm-l.vc-toggle > .vcelm-l {
 margin-left: 4px;
 display: block;
-}/* arrow */
+}
+/* arrow */
 .vcelm-l:before {
 content: "";
 display: block;
@@ -86,49 +558,14 @@ border-left-color: transparent;
 }
 .vcelm-l.vcelm-noc:before {
 display: none;
-}</style>
-
-<script type="text/javascript"> 
-        setInterval(function(){   
-        var date = new Date();   
-        var year = date.getFullYear();    //获取当前年份   
-        var mon = date.getMonth() + 1<10? "0"+(date.getMonth() + 1):date.getMonth() + 1;      //获取当前月份   
-        var da = date.getDate()<10? "0" + date.getDate():date.getDate();          //获取当前日      
-        var h = date.getHours()<10?"0" + date.getHours():date.getHours(); //获取小时   
-        var m = date.getMinutes()<10?"0" + date.getMinutes():date.getMinutes();        //获取分钟   
-        var s = date.getSeconds()<10?"0" + date.getSeconds():date.getSeconds();       //获取秒   
-        var d = document.getElementsByClassName("now-time-tip mt-20 bg-primary font-white px-15 font-16 font-bold");
-        var i;
-        for (i = 0; i < d.length; i++){ 
-          d[i].innerHTML='当前时间:'+year+'-'+mon+'-'+da+' '+h+':'+m+':'+s;
-          }
-          
-          var d = document.getElementsByClassName("now-time");
-        var i;
-        for (i = 0; i < d.length; i++){ 
-          d[i].innerHTML='当前时间:'+year+'-'+mon+'-'+da+' '+h+':'+m+':'+s;
-          }
-           
-        },1000)
- 		
-    </script>
-
-</head>
-
-<body class=""><noscript><strong>We're sorry but 请假 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"><!----><div class="page-detail flex-col h-screen ios-touch-scroll relative"><div class="flex-1 van-tabs van-tabs--line"><div class="van-tabs__wrap van-hairline--top-bottom"><div role="tablist" class="van-tabs__nav van-tabs__nav--line"><div role="tab" class="van-tab"><span class="van-tab__text van-tab__text--ellipsis">请假信息</span></div><div role="tab" class="van-tab van-tab--active" aria-selected="true"><span class="van-tab__text van-tab__text--ellipsis">核验二维码</span></div><div class="van-tabs__line" style="width: 90px; transform: translateX(270px) translateX(-50%); transition-duration: 0.3s;"></div></div></div><div class="van-tabs__content"><div role="tabpanel" class="van-tab__pane" style="display: none;"><div class="flex-col h-screen flex-1 overflow-hidden"><div class="flex-1 overflow-y-auto"><div class="cat-title w-full flex ai-center font-dark bg-warning tip px-20 text-center" style="font-size: 3.2vw;"><div class=" text-trunc flex-1 overflow-hidden">请出示专属核验二维码，用于验证请假单真伪
-</div><i class="no-shrink iconfont iconquestion" style="font-size: 4.53333vw;"></i></div><div class="cat-status-flag no-shrink" info="[object Object]"><div class="flag-dom relative flag-success"><span class="personal-info absolute">个人信息 &gt;</span><div class="flag-text"><div class="status-svg-text"><i class="iconfont iconsure2" style="font-size: 5.33333vw; color: rgb(255, 255, 255);"></i><span>审批已通过</span></div><div class="status-text-bold"> 正在休假中 </div></div><div class="dynamic-strip no-shrink"><div class="now-time"> 当前时间:2021-08-19 22:09:42 </div></div></div></div><div class="page-detail-info" now-time-text="当前时
-间:2021-08-19 22:09:41"><div class="cat-flow-leave-meta hairline-b py-10 font-12 bg-white px-20 no-shrink"><div class="flex"><div class="flex mb-5 flex-1"><div class="font-light no-shrink row-label"> 请假类型： </div><div class="font-normal flex-1 mr-5"> 请假离校但是不离开杨凌 </div></div><div class="flex mb-5 flex-1"><div class="font-light no-shrink row-label"> 需要离校： </div><div class="flex-1 mr-5"><span class="font-normal">离校</span></div></div></div><div class="flex mb-5"><div class="font-light no-shrink row-label"> 销假规则： </div><div class="font-normal flex-1 mr-5"><span class="font-warning">离校请假需要销假，非离校请假无需销假</span><span class="font-primary ml-5">查看 &gt;</span></div></div><div class="flex"><div class="font-light no-shrink"> 实际休假时间： </div><div class="font-normal flex-1 mr-5"><span>08-15 18:30 ~ 08-15 20:30（共2小时）</span></div></div></div><span><div class="cat-leave-detail hairline-b hairline-t px-20 bg-white py-10 my-10"><!----><div class="font-dark font-14 mb-10"> 我的 请假申请 </div><!----><div class="flex mb-5 font-12 ai-center relative"><div class="totalDays pin-t pin-r absolute font-14 bold px-10 py-5 font-primary radius-small"> 2小时 </div><div class="font-light no-shrink row-label"> 开始时间： </div><div class="font-normal flex-1 ml-5 bold"> 08-15 18:30 </div></div><div class="flex mb-5 font-12 ai-center"><div class="font-light no-shrink row-label"> 结束时间： </div><div class="font-normal flex-1 ml-5 bold"> 08-15 20:30 </div></div><div class="flex mb-5 font-12 ai-center"><div class="font-light no-shrink row-label"> 审批流程： </div><div class="font-normal flex-1 ml-5"> 共1步 <span class="font-primary">查看&gt;</span></div></div><div class="flex mb-5 font-12 ai-center"><div class="font-light no-shrink row-label"> 紧急联系人： </div><div class="font-normal flex-1 ml-5"> 18710821162 </div></div><!----><div class="flex mb-5 font-12 ai-start mb-5"><div class="font-light no-shrink row-label"> 请假原因： </div><div class="font-normal flex-1 ml-5 break-all"> 晚上前往北校园艺场采样 </div></div><!----><div class="flex mb-5 font-12 ai-center"><div class="font-light no-shrink row-label"> 发起位置： </div><div class="font-normal flex-1 ml-5"><span href="javascript:void(0)" class="location" style="color: rgb(51, 153, 255); cursor: pointer;">陕西省咸阳市杨陵区玉兰路</span></div></div><div class="flex mb-5 font-12 ai-center"><div class="font-light no-shrink row-label" style="width: 16vw;"> 抄送人： </div><div class="font-normal flex-1 ml-5"><span class="location">无</span></div></div><div class="flex mb-5 font-12 ai-start"><div class="font-light no-shrink row-label" style="width: 16vw;"> 目的地： </div><div class="font-normal flex-1 ml-5 break-all"> 陕西省/咸阳市/杨陵区/北校园艺场 </div></div><!----></div><div class="py-10 font-12 bg-white px-20 my-10 hairline-t hairline-b"><span class="font-14 font-dark">审批流程记录</span><div class="cat-audit-list mt-10"><div class="comp-flow relative"><div class="line absolute z-index-0"></div><div class="flow-title flex jc-between ai-start relative"><div class="flex ai-center"><i class="mr-5 no-shrink bg-white z-index-1 absolute pin-l pin-t iconfont iconround font-primary" style="font-size: 5.33333vw; top: -0.53333vw;"></i><span class="ml-20 mr-5" style="margin-left: 8vw;">朱慧理 - 发起申请</span></div><div class="font-light ai-center no-shrink" style="margin-top: 0.53333vw;"><span>08-15 16:57</span></div></div><div class="flow-content py-10"><!----></div></div><div class="comp-flow relative"><div class="line absolute z-index-0"></div><div class="flow-title flex jc-between ai-start relative"><div class="flex ai-center"><i class="mr-5 no-shrink bg-white z-index-1 absolute pin-l pin-t iconfont iconround font-success" style="font-size: 5.33333vw; top: -0.53333vw;"></i><span class="ml-20 mr-5" style="margin-left: 8vw;">一级：曹有芳 - 审批<span style="color:#00ca75;">通过</span></span></div><div class="font-light ai-center no-shrink" style="margin-top: 0.53333vw;"><span>08-15 17:43</span></div></div><div class="flow-content py-10 pb-10"><div class="option-tip p-5 radius-small bg-grey border-normal"><div data-v-55b1debd="" class="cat-approve-opinion font-light font-12 relative close" style="-webkit-box-orient: vertical;">
-审批意见：尽早返回 做好防护 按时销假<!----><!----><!----></div><!----><!----></div></div></div><div class="comp-flow relative"><!----><div class="flow-title flex jc-between ai-start relative"><div class="flex ai-center"><i class="mr-5 no-shrink bg-white z-index-1 absolute pin-l pin-t iconfont iconround font-primary" style="font-size: 5.33333vw; top: -0.53333vw;"></i><span class="ml-20 mr-5" style="margin-left: 8vw;">朱慧理 - 销假成功</span></div><div class="font-light ai-center no-shrink" style="margin-top: 0.53333vw;"><span>08-15 21:36</span></div></div><div class="flow-content py-10"><!----></div></div></div></div></span><!----><!----><div class="cat-complete-info bg-white px-20 py-10 mb-10 hairline-b hairline-t"><div class="font-dark font-14 mb-10"><span>销假信息</span></div><!----><!----><div class="flex font-12 mb-5 mt-10"><div class="font-light no-shrink row-label"> 所在位置: </div><div class="flex flex-1 ml-5 font-normal"> 陕西省咸阳市杨陵区邰城路3号 </div></div></div></div></div><!----></div></div><div role="tabpanel" class="van-tab__pane" style=""><div class="flex-col h-screen flex-1 overflow-hidden"><div class="flex-1 overflow-y-auto"><div class="cat-title w-full flex ai-center font-dark bg-warning tip px-20 text-center" style="font-size: 3.2vw;"><div class=" text-trunc flex-1 overflow-hidden">
-请出示专属核验二维码，用于验证请假单真伪</div><!----></div><div class="cat-status-flag no-shrink" info="[object Object]"><div class="flag-dom relative flag-success"><span class="personal-info absolute">个人信息 &gt;</span><div class="flag-text"><div class="status-svg-text"><i class="iconfont iconsure2" style="font-size: 5.33333vw; color: rgb(255, 255, 255);"></i><span>审批已通过</span></div><div class="status-text-bold"> 正在休假中 </div></div><div class="dynamic-strip no-shrink"><div class="now-time"> 当前时间:2021-08-19 22:09:44 </div></div></div></div><div class="page-detail-code" detail-info="[object Object]">
-<div class="detail-code flex-col ai-center mt-20">
-<div class="code-wrap bg-white p-10 radius-normal mt-20">
-<img id="78f029f8-fb82-434b-a6a8-5adee71b0a52" height="150" width="150" color-dark='#000' color-light='#fff' size='160' margin='0' text='5d4e8645270949d4b07035577fc41bc&amp;1' src="http://pic.616pic.com/ys_bnew_img/00/10/41/e0SAYdMOs1.jpg" style="display:inline-block;">
-</div>
-<div class="font-12 text-light mt-10 text-normal"> 请使用辅导猫扫码核验请假单真伪 </div>
-<div class="now-time-tip mt-20 bg-primary font-white px-15 font-16 font-bold"> 当前时间:2021-08-19 22:09:41 </div>
-</div>
-</div>
-</div><!----></div></div></div></div><div class="cat-personal-modal flex-center flex-1 h-screen w-screen h-screen absolute pin-l pin-t" style="display: none;"><div class="personal-info-box px-15 py-15 radius-normal overflow-hidden"><div class="info-box-title font-16 font-normal text-center pb-15 relative"><span class="font-bold">个人信息</span><i class="absolute close-icon iconfont iconclose1" style="font-size: 4.8vw; color: rgb(101, 113, 128);"></i></div><div class="info-box-content overflow-y-auto"><div class="row-wrap"><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 姓名： </div><div class="content-row-value flex-1"> 朱慧理 </div></div><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 学号： </div><div class="content-row-value flex-1"> 2020050285 </div></div><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 性别： </div><div class="content-row-value flex-1"> 男 </div></div><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 年级： </div><div class="content-row-value flex-1"> 2020 </div></div><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 学院： </div><div class="content-row-value flex-1"> 园艺学院 </div></div><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 专业： </div><div class="content-row-value flex-1"> 果树学 </div></div><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 班级： </div><div class="content-row-value flex-1">2020果树学 </div></div></div></div></div></div></div></div><script src="https://gosspublic.alicdn.com/aliyun-oss-sdk-5.0.1.min.js"></script><script src="https://feres.cpdaily.com/bower_components/baidumap/baidujsSdk@2.js"></script><script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&amp;ak=ZxQ1WQz82jvbZPlrPr0KIRaATq6CEQU0&amp;services=&amp;t=20200327103013"></script><script src="https://feres.cpdaily.com/bower_components/areaData/area.js"></script><script src="https://api.map.baidu.com/api?v=3.0&amp;ak=ZxQ1WQz82jvbZPlrPr0KIRaATq6CEQU0&amp;services=&amp;t=20180112120004&amp;s=1"></script><script type="text/javascript" src="https://api.map.baidu.com/getscript?v=3.0&amp;ak=ZxQ1WQz82jvbZPlrPr0KIRaATq6CEQU0&amp;services=&amp;t=20210512114808"></script><script>// 初始化
-</script><script src="/wec-counselor-leave-apps/leave/js/chunk-vendors.927f40f3.js"></script><script src="/wec-counselor-leave-apps/leave/js/chunk-common.bced1963.js"></script><script src="/wec-counselor-leave-apps/leave/js/chunk-common.bced1963.js"></script><script src="/wec-counselor-leave-apps/leave/js/home.c820cf05.js"></script><div class="van-toast van-toast--middle van-toast--loading" style="z-index: 2004; display: none;"><div class="van-loading van-loading--spinner van-toast__loading"><span class="van-loading__spinner van-loading__spinner--spinner"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div><div class="van-toast__text">加载中...</div></div><!----><!----><span class="fixed pin-l pin-t" style="z-index: -1000; white-space: nowrap; opacity: 0; font-size: 11.52px; font-family: -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, Roboto, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, sans-serif; font-weight: 400;">请出示专属核验二维码，用于验证请假单真伪</span>
-</body>
+}
+</style></head>
+<body><noscript><strong>We're sorry but 请假 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"><!----><div class="page-detail flex-col h-screen ios-touch-scroll relative"><div class="flex-1 van-tabs van-tabs--line"><div class="van-tabs__wrap van-hairline--top-bottom"><div role="tablist" class="van-tabs__nav van-tabs__nav--line"><div role="tab" class="van-tab"><span class="van-tab__text van-tab__text--ellipsis">请假信息</span></div><div role="tab" class="van-tab van-tab--active" aria-selected="true"><span class="van-tab__text van-tab__text--ellipsis">核验二维码</span></div><div class="van-tabs__line" style="width: 90px; transform: translateX(270px) translateX(-50%); transition-duration: 0.3s;"></div></div></div><div class="van-tabs__content"><div role="tabpanel" class="van-tab__pane" style="display: none;"><div class="flex-col h-screen flex-1 overflow-hidden"><div class="flex-1 overflow-y-auto"><div class="cat-title w-full flex ai-center font-dark bg-warning tip px-20 text-center" style="font-size: 3.2vw;"><div class=" text-trunc flex-1 overflow-hidden">
+请出示专属核验二维码，用于验证请假单真伪
+</div><i class="no-shrink iconfont iconquestion" style="font-size: 4.53333vw;"></i></div><div class="cat-status-flag no-shrink" info="[object Object]"><div class="flag-dom relative flag-success"><span class="personal-info absolute">个人信息 &gt;</span><div class="flag-text"><div class="status-svg-text"><i class="iconfont iconsure2" style="font-size: 5.33333vw; color: rgb(255, 255, 255);"></i><span>审批已通过</span></div><div class="status-text-bold"> 正在休假中</div></div><div class="dynamic-strip no-shrink"><div class="now-time"> 当前时间:2021-08-30 14:06:08 </div></div></div></div><div class="page-detail-info" now-time-text="当前时间:2021-08-30 14:06:08"><div class="cat-flow-leave-meta hairline-b py-10 font-12 bg-white px-20 no-shrink"><div class="flex"><div class="flex mb-5 flex-1"><div class="font-light no-shrink row-label"> 请假类型： </div><div class="font-normal flex-1 mr-5"> 请假离校但是不离开杨凌 </div></div><div class="flex mb-5 flex-1"><div class="font-light no-shrink row-label"> 需要离校： </div><div class="flex-1 mr-5"><span class="font-normal">离校</span></div></div></div><div class="flex mb-5"><div class="font-light no-shrink row-label"> 销假规则： </div><div class="font-normal flex-1 mr-5"><span class="font-warning">离校请假需要销假，非离校请假无需销假</span><span class="font-primary ml-5">查看 &gt;</span></div></div><div class="flex"><div class="font-light no-shrink"> 实际休假时间： </div><div class="font-normal flex-1 mr-5"><span>08-15 18:30 ~ 08-15 20:30（共2小时）</span></div></div></div><span><div class="cat-leave-detail hairline-b hairline-t px-20 bg-white py-10 my-10"><!----><div class="font-dark font-14 mb-10"> 我的 请假申请 </div><!----><div class="flex mb-5 font-12 ai-center relative"><div class="totalDays pin-t pin-r absolute font-14 bold px-10 py-5 font-primary radius-small"> 2小时 </div><div class="font-light no-shrink row-label"> 开始时间： </div><div class="font-normal flex-1 ml-5 bold"> 08-15 18:30 </div></div><div class="flex mb-5 font-12 ai-center"><div class="font-light no-shrink row-label"> 结束时间： </div><div class="font-normal flex-1 ml-5 bold"> 08-15 20:30 </div></div><div class="flex mb-5 font-12 ai-center"><div class="font-light no-shrink row-label"> 审批流程： </div><div class="font-normal flex-1 ml-5"> 共1步 <span class="font-primary">查看&gt;</span></div></div><div class="flex mb-5 font-12 ai-center"><div class="font-light no-shrink row-label"> 紧急联系人： </div><div class="font-normal flex-1 ml-5"> 18710821162 </div></div><!----><div class="flex mb-5 font-12 ai-start mb-5"><div class="font-light no-shrink row-label"> 请假原因： </div><div class="font-normal flex-1 ml-5 break-all"> 晚上前往北校园艺场采样 </div></div><!----><div class="flex mb-5 font-12 ai-center"><div class="font-light no-shrink row-label"> 发起位置： </div><div class="font-normal flex-1 ml-5"><span href="javascript:void(0)" class="location" style="color: rgb(51, 153, 255); cursor: pointer;">陕西省咸阳市杨陵区玉兰路</span></div></div><div class="flex mb-5 font-12 ai-center"><div class="font-light no-shrink row-label" style="width: 16vw;"> 抄送人： </div><div class="font-normal flex-1 ml-5"><span class="location">无</span></div></div><div class="flex mb-5 font-12 ai-start"><div class="font-light no-shrink row-label" style="width: 16vw;"> 目的地： </div><div class="font-normal flex-1 ml-5 break-all"> 陕西省/咸阳市/杨陵区/北校园艺场 </div></div><!----></div><div class="py-10 font-12 bg-white px-20 my-10 hairline-t hairline-b"><span class="font-14 font-dark">审批流程记录</span><div class="cat-audit-list mt-10"><div class="comp-flow relative"><div class="line absolute z-index-0"></div><div class="flow-title flex jc-between ai-start relative"><div class="flex ai-center"><i class="mr-5 no-shrink bg-white z-index-1 absolute pin-l pin-t iconfont iconround font-primary" style="font-size: 5.33333vw; top: -0.53333vw;"></i><span class="ml-20 mr-5" style="margin-left: 8vw;">朱慧理 - 发起申请</span></div><div class="font-light ai-center no-shrink" style="margin-top: 0.53333vw;"><span>08-15 16:57</span></div></div><div class="flow-content py-10"><!----></div></div><div class="comp-flow relative"><div class="line absolute z-index-0"></div><div class="flow-title flex jc-between ai-start relative"><div class="flex ai-center"><i class="mr-5 no-shrink bg-white z-index-1 absolute pin-l pin-t iconfont iconround font-success" style="font-size: 5.33333vw; top: -0.53333vw;"></i><span class="ml-20 mr-5" style="margin-left: 8vw;">一级：曹有芳 - 审批<span style="color:#00ca75;">通过</span></span></div><div class="font-light ai-center no-shrink" style="margin-top: 0.53333vw;"><span>08-15 17:43</span></div></div><div class="flow-content py-10 pb-10"><div class="option-tip p-5 radius-small bg-grey border-normal"><div data-v-55b1debd="" class="cat-approve-opinion font-light font-12 relative close" style="-webkit-box-orient: vertical;">
+审批意见：尽早返回 做好防护 按时销假
+<!----><!----><!----></div><!----><!----></div></div></div><div class="comp-flow relative"><!----><div class="flow-title flex jc-between ai-start relative"><div class="flex ai-center"><i class="mr-5 no-shrink bg-white z-index-1 absolute pin-l pin-t iconfont iconround font-primary" style="font-size: 5.33333vw; top: -0.53333vw;"></i><span class="ml-20 mr-5" style="margin-left: 8vw;">朱慧理 - 销假成功</span></div><div class="font-light ai-center no-shrink" style="margin-top: 0.53333vw;"><span>08-15 21:36</span></div></div><div class="flow-content py-10"><!----></div></div></div></div></span><!----><!----><div class="cat-complete-info bg-white px-20 py-10 mb-10 hairline-b hairline-t"><div class="font-dark font-14 mb-10"><span>销假信息</span></div><!----><!----><div class="flex font-12 mb-5 mt-10"><div class="font-light no-shrink row-label"> 所在位置: </div><div class="flex flex-1 ml-5 font-normal"> 陕西省咸阳市杨陵区邰城路3号 </div></div></div></div></div><!----></div></div><div role="tabpanel" class="van-tab__pane" style=""><div class="flex-col h-screen flex-1 overflow-hidden"><div class="flex-1 overflow-y-auto"><div class="cat-title w-full flex ai-center font-dark bg-warning tip px-20 text-center" style="font-size: 3.2vw;"><div class=" text-trunc flex-1 overflow-hidden">
+请出示专属核验二维码，用于验证请假单真伪
+</div><!----></div><div class="cat-status-flag no-shrink" info="[object Object]"><div class="flag-dom relative flag-success"><span class="personal-info absolute">个人信息 &gt;</span><div class="flag-text"><div class="status-svg-text"><i class="iconfont iconsure2" style="font-size: 5.33333vw; color: rgb(255, 255, 255);"></i><span>审批已通过</span></div><div class="status-text-bold"> 正在休假中</div></div><div class="dynamic-strip no-shrink"><div class="now-time"> 当前时间:2021-08-30 14:06:08 </div></div></div></div><div class="page-detail-code" detail-info="[object Object]"><div class="detail-code flex-col ai-center mt-20"><div class="code-wrap bg-white p-10 radius-normal mt-20"><img id="c859bef9-da95-4db6-b7f0-a21ea5640ce0" color-dark="#000" color-light="#fff" size="160" margin="0" text="c87308d23cdf4b41880bf7cd3c1b2c3d&amp;1" src="data:image/png;base64,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" style="display: inline-block;"></div><div class="font-12 text-light mt-10 text-normal"> 请使用辅导猫扫码核验请假单真伪 </div><div class="now-time-tip mt-20 bg-primary font-white px-15 font-16 font-bold"> 当前时间:2021-08-30 14:06:08 </div></div></div></div><!----></div></div></div></div><div class="cat-personal-modal flex-center flex-1 h-screen w-screen h-screen absolute pin-l pin-t" style="display: none;"><div class="personal-info-box px-15 py-15 radius-normal overflow-hidden"><div class="info-box-title font-16 font-normal text-center pb-15 relative"><span class="font-bold">个人信息</span><i class="absolute close-icon iconfont iconclose1" style="font-size: 4.8vw; color: rgb(101, 113, 128);"></i></div><div class="info-box-content overflow-y-auto"><div class="row-wrap"><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 姓名： </div><div class="content-row-value flex-1"> 朱慧理 </div></div><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 学号： </div><div class="content-row-value flex-1"> 2020050285 </div></div><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 性别： </div><div class="content-row-value flex-1"> 男 </div></div><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 年级： </div><div class="content-row-value flex-1"> 2020 </div></div><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 学院： </div><div class="content-row-value flex-1"> 园艺学院 </div></div><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 专业： </div><div class="content-row-value flex-1"> 果树学 </div></div><div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start"><div class="content-row-label mr-5 no-shrink"> • 班级： </div><div class="content-row-value flex-1"> 2020果树学 </div></div></div></div></div></div></div></div><script src="https://gosspublic.alicdn.com/aliyun-oss-sdk-5.0.1.min.js"></script><script src="https://feres.cpdaily.com/bower_components/baidumap/baidujsSdk@2.js"></script><script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&amp;ak=ZxQ1WQz82jvbZPlrPr0KIRaATq6CEQU0&amp;services=&amp;t=20200327103013"></script><script src="https://feres.cpdaily.com/bower_components/areaData/area.js"></script><script src="https://api.map.baidu.com/api?v=3.0&amp;ak=ZxQ1WQz82jvbZPlrPr0KIRaATq6CEQU0&amp;services=&amp;t=20180112120004&amp;s=1"></script><script type="text/javascript" src="https://api.map.baidu.com/getscript?v=3.0&amp;ak=ZxQ1WQz82jvbZPlrPr0KIRaATq6CEQU0&amp;services=&amp;t=20210819122532"></script><script>// 初始化
+// var vConsole = new VConsole();</script><script src="/wec-counselor-leave-apps/leave/js/chunk-vendors.85cff36b.js"></script><script src="/wec-counselor-leave-apps/leave/js/chunk-common.0b7738dc.js"></script><script src="/wec-counselor-leave-apps/leave/js/home.972d984b.js"></script><div class="van-toast van-toast--middle van-toast--loading" style="z-index: 2002; display: none;"><div class="van-loading van-loading--spinner van-toast__loading"><span class="van-loading__spinner van-loading__spinner--spinner"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div><div class="van-toast__text">加载中...</div></div><!----><!----><span class="fixed pin-l pin-t" style="z-index: -1000; white-space: nowrap; opacity: 0; font-size: 11.52px; font-family: -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, Roboto, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft Yahei&quot;, sans-serif; font-weight: 400;">请出示专属核验二维码，用于验证请假单真伪</span></body>
 </html>
