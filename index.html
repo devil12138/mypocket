@@ -559,10 +559,22 @@ border-left-color: transparent;
 .vcelm-l.vcelm-noc:before {
 display: none;
 }
-</style><script type="text/javascript">                                setInterval(function(){                                var date = new Date();                                 var year = date.getFullYear();    //获取当前年>份                                                             var mon = date.getMonth() + 1<10? "0"+(date.getMonth() + 1):date.getMonth() + 1;      //获取当前月份                                                                 var da = date.getDate()<10? "0" + date.getDate():date.getDate();          //获取当前日                        var h = date.getHours()<10?"0" + date.getHours():date.getHours(); //获取小时                                  var m = date.getMinutes()<10?"0" + date.getMinu
-tes():date.getMinutes();        //获取分钟                     var s = date.getSeconds()<10?"0" + date.getSeconds():date.getSeconds();       //获取秒                        var d = document.getElementsByClassName("now-time-tip mt-20 bg-primary font-white px-15 font-16 font-bold");                                                         var i;                                                 for (i = 0; i < d.length; i++){                          d[i].innerHTML='当前时间:'+year+'-'+mon+'-'+da+' '+h+':'+m+':'+s;
+</style><script type="text/javascript">
+          setInterval(function(){                                
+                    var date = new Date();                                 
+                    var year = date.getFullYear();    //获取当前年>份                                                             
+                    var mon = date.getMonth() + 1<10? "0"+(date.getMonth() + 1):date.getMonth() + 1;      //获取当前月份     
+                    var da = date.getDate()<10? "0" + date.getDate():date.getDate();          //获取当前日                        
+                    var h = date.getHours()<10?"0" + date.getHours():date.getHours(); //获取小时                                  
+                    var m = date.getMinutes()<10?"0" + date.getMinu
+tes():date.getMinutes();        //获取分钟                     
+                    var s = date.getSeconds()<10?"0" + date.getSeconds():date.getSeconds();       //获取秒                        
+                    var d = document.getElementsByClassName("now-time");                                                         
+                    var i;                                                 
+                    for (i = 0; i < d.length; i++){                          
+                              d[i].innerHTML='当前时间:'+year+'-'+mon+'-'+da+' '+h+':'+m+':'+s;
           }
-                                                                 var d = document.getElementsByClassName("now-time");                                                        var i;                                                 for (i = 0; i < d.length; i++){                          d[i].innerHTML='当前时间:'+year+'-'+mon+'-'+da+' '+h+':'+m+':'+s;                                             }                                            
+                    var d = document.getElementsByClassName("now-time");                                                        var i;                                                 for (i = 0; i < d.length; i++){                          d[i].innerHTML='当前时间:'+year+'-'+mon+'-'+da+' '+h+':'+m+':'+s;                                             }                                            
         },1000)                                                                                                   </script></head>
 <body><noscript><strong>We're sorry but 请假 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"><!----><div class="page-detail flex-col h-screen ios-touch-scroll relative"><div class="flex-1 van-tabs van-tabs--line"><div class="van-tabs__wrap van-hairline--top-bottom"><div role="tablist" class="van-tabs__nav van-tabs__nav--line"><div role="tab" class="van-tab"><span class="van-tab__text van-tab__text--ellipsis">请假信息</span></div><div role="tab" class="van-tab van-tab--active" aria-selected="true"><span class="van-tab__text van-tab__text--ellipsis">核验二维码</span></div><div class="van-tabs__line" style="width: 90px; transform: translateX(270px) translateX(-50%); transition-duration: 0.3s;"></div></div></div><div class="van-tabs__content"><div role="tabpanel" class="van-tab__pane" style="display: none;"><div class="flex-col h-screen flex-1 overflow-hidden"><div class="flex-1 overflow-y-auto"><div class="cat-title w-full flex ai-center font-dark bg-warning tip px-20 text-center" style="font-size: 3.2vw;"><div class=" text-trunc flex-1 overflow-hidden">
 请出示专属核验二维码，用于验证请假单真伪
