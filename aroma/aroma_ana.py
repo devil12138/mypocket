@@ -6,11 +6,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os   
 import sys
-def data_filter(aromadir):
+import argparse
+
+def data_filter(aromadir, sample_name):
     if os.path.exists(aromadir):
         pdf_reports = os.listdir(aromadir)
-        pdf_reports = [x for x in pdf_reports if  x[-4:] == '.pdf' and "32_15_p" in x]
+        pdf_reports = [x for x in pdf_reports if  x[-4:] == '.pdf' and sample_name in x]
         if not pdf_reports:
+        
             raise Exception('the dir has no report file')
     else:
         raise Exception('sorry, the dir is not exist!') 
@@ -158,11 +161,26 @@ def data_standard(result, axis=0):
 
 
 if __name__=="__main__":
-    aromadir="../../bluetooth/aroma_report/"
-    result=data_filter(aromadir)
+    parser =argparse.ArgumentParser(description='GCMS:')
+    parser = add_argument('-m', dest='manual', help='sample name manual')
+    args = parser.parse_args()
+    if args.manual !='':
+    		sample_name = args.manual
+    else:
+    		filelist = os.listdir('./')
+    		filelist = [x for x in filelist if x[-4:]=='.pdf']
+    		if not filelist:
+    			raise Exception('None')
+    			sys.exit()
+    		filelist.sort(key=lambda fn:os.path.getctime('./'+fn))
+    		sample_name = filelist[-1]
+    		
+    #aromadir="../../bluetooth/aroma_report/"
+    aromadir = './'
+    result=data_filter(aromadir, sample_name)
     result.fillna(value=0, inplace=True)
     #result.to_csv("aroma.csv", sep=",")
     draw_radar(result)
-    #result.to_csv("aroma.csv", sep=",")
+    #result.to_csv("rroma.csv", sep=",")
     #ax.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1))
     #os.system("termux-open aroma.csv")
